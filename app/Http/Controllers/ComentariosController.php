@@ -37,8 +37,11 @@ class ComentariosController extends Controller
 
             'res' => true,
             'message' => 'comentario actualizado exitosamente'
+
         ]);
-    }
+        $comentarios->save();
+     }
+    
 
     public function destroy($id)
     {
@@ -46,7 +49,7 @@ class ComentariosController extends Controller
       return response()->json([
 
         'res' => true,
-        'message' => 'Post eliminado correctamente'
+        'message' => 'Comentarios eliminado correctamente'
       ]);
     }
 
