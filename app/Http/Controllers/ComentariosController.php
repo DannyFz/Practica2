@@ -39,10 +39,9 @@ class ComentariosController extends Controller
             'message' => 'comentario actualizado exitosamente'
 
         ]);
-        $comentarios->save();
+       
      }
     
-
     public function destroy($id)
     {
       comentarios::destroy($id);
